@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>チケット申込ページ</title>
+  <style>
+    body {
+      font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background-color: #f5f6fa;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .card {
+      display: inline-block;
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #2f3640;
+    }
+    p {
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .btn {
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>モジョどろんぱ25周年記念ライブ</h1>
+    <p>チケットのお申込みはこちらから</p>
+
+    <form action="https://ticket.pia.jp/piasp/rsv/mojo-doronpa/mojo-doronpa25ytfccs.jsp" method="POST">
+      <input type="hidden" name="slcd" value="mojo-doronpa25ytfccs">
+      <input type="hidden" name="acpt_no" value="dk0NxCtnFhWC6WL5">
+      <input class="btn" type="submit" value="申込画面へ">
+    </form>
+  </div>
+</body>
+</html>
